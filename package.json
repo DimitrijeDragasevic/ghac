@@ -1,0 +1,36 @@
+{
+  "name": "ghac",
+  "version": "0.1.0",
+  "description": "GitHub Actions Compiler — structured workflows compiled to flat YAML",
+  "type": "module",
+  "bin": {
+    "ghac": "./dist/bin/ghac.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "dev": "tsx bin/ghac.ts"
+  },
+  "keywords": [
+    "github-actions",
+    "compiler",
+    "yaml",
+    "ci-cd",
+    "devops"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "^5.0.0",
+    "commander": "^14.0.3",
+    "js-yaml": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^25.5.0",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.1"
+  }
+}

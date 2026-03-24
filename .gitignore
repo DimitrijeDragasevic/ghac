@@ -1,0 +1,4 @@
+node_modules/
+dist/
+.ghsrc/
+.github/workflows/
